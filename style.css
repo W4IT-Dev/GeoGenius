@@ -1,0 +1,162 @@
+body {
+    background-color: rgb(240, 240, 240);
+    color: rgb(30, 30, 30);
+    text-align: center;
+    overflow: hidden;
+}
+
+button {
+    height: auto;
+    width: 150px;
+    background-color: rgba(0, 200, 0, 0.4);
+    font-size: 18px;
+    margin: 5px;
+    transition: all 0.125s;
+}
+
+button:focus {
+    background: rgb(0, 180, 0);
+    box-shadow: 0 0 4px 1.5px #090;
+    height: 32px;
+    width: 154;
+}
+
+.answer-select-button {
+    height: auto;
+    width: 200px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+.answer-select-button:focus {
+    height: 29px;
+    width: 204px;
+}
+
+#startScreen,
+#game,
+#gameOver {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#startScreen img {
+    margin: 15px 0 -25px 0;
+}
+
+#startScreen h1 {
+    margin-bottom: 5px;
+}
+
+#game,
+#gameOver {
+    display: none;
+    padding: 15px 20px 15px 20px;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 45px;
+    box-shadow: -1px 5px 9px 3px rgba(0, 85, 0, 0.82);
+    background-color: rgb(0, 80, 10);
+    font-weight: bold;
+}
+
+#gounder {
+    position: relative;
+    height: 40px;
+}
+
+#header div {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+#header div p {
+    font-size: 19px;
+}
+
+#flag {
+    height: 105px;
+    width: 162px;
+    margin-bottom: 6px;
+}
+
+#answers,
+#gameOverButtons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: auto;
+    width: 200px;
+}
+
+#help {
+    position: absolute;
+    top: 500px;
+    transition: all 0.6s;
+    background-color: rgba(42, 87, 30, 0.99);
+    color: aliceblue;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 260px;
+    left: 0;
+    right: 0;
+    padding: 10px;
+}
+
+#tries-left,
+#streak,
+#correct {
+    position: relative;
+    margin: 2px;
+}
+
+#tries-left p,
+#streak p,
+#correct p {
+    font-size: 19px;
+    position: absolute;
+    top: -2px;
+}
+
+#tries-left p {
+    left: 20px;
+}
+
+#streak p {
+    left: 13.5px;
+}
+
+#correct p {
+    left: 14.5px;
+}
+
+#invisBtn {
+    opacity: 0;
+}
+
+#gameOver {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: auto;
+    left: 10px;
+    right: 10px;
+    padding: 10px;
+    height: auto;
+    text-align: center;
+    background-color: rgba(100, 235, 100, 0.68);
+    border: 3.5px solid rgba(0, 160, 0, 0.8);
+    border-radius: 10px;
+    justify-content: center;
+    flex-direction: column;
+}

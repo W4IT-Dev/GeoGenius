@@ -1,0 +1,28 @@
+{
+   "version": "1.0.0",
+   "name": "GeoGenius",
+   "description": "Improve your geography skills.",
+   "type": "web",
+   "launch_path": "/index.html",
+   "icons": {
+      "56": "/img/gg-icon.png",
+      "112": "/img/gg-icon.png"
+   },
+   "developer": {
+      "name": "W4IT Dev",
+      "url": " https://w4it-dev.github.io/website"
+   },
+   "locales": {
+      "en-US": {
+         "name": "GeoGenius",
+         "subtitle": "Improve your geography skills.",
+         "description": "GeoGenius is an interactive app that helps users improve their geography skills through flag, country, and capital guessing games. With engaging and educational gameplay, users can test their knowledge of the world and learn more about flags, countries, and capitals."
+      }
+   },
+   "default_locale": "en-US",
+   "categories": [
+      "games",
+      "education"
+   ],
+   "fullscreen": "true"
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="/JavaScript/script.js" defer></script>
+    <script src="/JavaScript/functions.js" defer></script>
+    <script src="/JavaScript/eventListener.js" defer></script>
+</head>
+
+<body onload="startBtn.focus();">
+    <div id="startScreen" style="background-image: url(img/world-map.png);">
+        <img src="img/flag-globe.png" style="height: 165px; width: 165px;">
+        <h1>GeoGenius</h1>
+        <button id="startBtn" class="home-screen-button" tabindex="0">Start</button>
+        <button id="helpBtn" class="home-screen-button" tabindex="1">Help</button>
+    </div>
+    <div id="help">
+        <h2><u>Help</u></h2>
+        Use the arrow keys and enter or 1,2,3 or 4 to select your answer!
+        <button id="invisBtn"></button>
+    </div>
+    <div id="game" style="background-image: url(img/world-map.png);">
+        <div id="header">
+            <div id="tries-left">Tries Left: <p>99</p>
+            </div>
+            <div id="correct">Correct: <p>99</p>
+            </div>
+            <div id="streak">Streak: <p>99</p>
+            </div>
+        </div>
+        <div id="gounder"></div>
+        <img id="flag" src="/img/flag/afghanistan.png">
+        <div id="answers">
+            <button class="answer-select-button" id="first" tabindex="0">Answer 1</button>
+            <button class="answer-select-button" id="second" tabindex="1">Answer 2</button>
+            <button class="answer-select-button" id="third" tabindex="2">Answer 3</button>
+            <button class="answer-select-button" id="fourth" tabindex="3">Answer 4</button>
+        </div>
+    </div>
+    <div id="gameOver">
+        <h1>Game Over!</h1>
+        <span>Score: <span></span>0</span><br><span>Max-Streak: <span>0</span></span>
+        <div id="gameOverButtons">
+        <button id="retry" class="game-over-button">Retry</button>
+        <button id="home" class="game-over-button">Home</button>
+    </div>
+    </div>
+
+    <!-- <footer id="softKeys">
+        <div id="softLeft">Left</div>
+        <div id="softMiddle">Middle</div>
+        <div id="softRight">Right</div>
+    </footer> -->
+</body>
+
+</html>
